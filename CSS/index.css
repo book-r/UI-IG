@@ -133,6 +133,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+body {
+  background: #F1D9CF;
+}
 h1,
 h2,
 h3 {
@@ -215,4 +218,11 @@ img {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
+}
+.intro,
+.app-features {
+  background: #EACFB2;
+}
+.featured-books {
+  background: #E4C3A5;
 }
