@@ -62,13 +62,22 @@
         <div class="main-banner" id="main-banner">
           <div class="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev"></div>
           <div class="imgban" id="imgban3">
-          
+            <div class="imgban-box">
+              <h2>Book Tittle</h2>
+              <p>Book Information.</p>
+            </div>
           </div>
           <div class="imgban" id="imgban2">
-          
+            <div class="imgban-box">
+              <h2>Book Tittle</h2>
+              <p>Book Information.</p>
+            </div>
           </div>
           <div class="imgban" id="imgban1">
-          
+            <div class="imgban-box">
+              <h2>Book Tittle</h2>
+              <p>Book Information.</p>
+            </div>
           </div>
           <div class="imgbanbtn imgbanbtn-next" id="imgbanbtn-next"></div>
         </div>
@@ -100,7 +109,26 @@
      startBannerLoop = setInterval(function() {
        bannerLoop();
      }, bannerTimer);
+    
     }
+
+document.getElementById("imgbanbtn-prev").onclick = function() {
+   if (bannerStatus === 1) {
+     bannerStatus = 2;
+   }
+   else if (bannerStatus === 2) {
+     bannerStatus = 3;
+   }
+   else if (bannerStatus === 3) {
+     bannerStatus = 1;
+   }
+   bannerLoop();
+}
+
+
+document.getElementById("imgbanbtn-next").onclick = function() {
+  bannerLoop();
+}
 
     function bannerLoop() {
       if (bannerStatus === 1) {

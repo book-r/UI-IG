@@ -29,8 +29,9 @@
     .feature1,.feature2,.feature3 {
         padding: 0 2%;
         h3 {
-          padding-left: 32%;
-          padding-bottom: 9px;
+            padding-left: 13%;
+            padding-bottom: 9px;
+            font-weight: bold;
           }
        
         p {
@@ -42,6 +43,15 @@
 
 .featured-books{
     background: @featuredBooks-background;
+
+    h2 {
+      padding: 12px 32%;
+    }
+
+    p {
+      padding-left: 2%;
+      padding-bottom: 18px;
+    }
 }
 
 
@@ -94,7 +104,7 @@
     opacity: 0.8;
     cursor: pointer;
 
-    &:hover{
+    &:hover{ 
         opacity: 0.9;
     }
 
@@ -102,7 +112,7 @@
 
 .imgbanbtn-prev {
     left: 5px;
-    background-image: url(/Images/iconfinder_ChevronLeft_1031537.png);
+    background-image: url(../../Images/keyboard_arrow_left_white_192x192.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,9 +121,39 @@
 
 .imgbanbtn-next {
     right: 5px;
-    background-image: url(/Images/iconfinder_ChevronRight_1031536.png);
+    background-image: url(/Images/keyboard_arrow_right_white_192x192.png);
     background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+.main-banner .imgban-box h2 {
+    font-family: @main-font;
+    font-size: 60PX;
+    color: #fff;
+}
+
+.main-banner .imgban-box p {
+    padding-top: 6px;
+    font-family: @main-font;
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-banner #imgban3 .imgban-box {
+    padding-top: 220px;
+    padding-left: 100px;
+}
+
+.main-banner #imgban2 .imgban-box {
+    padding-top: 220px;
+    padding-right: 100px;
+    float: right;
+    text-align: right;
+}
+
+.main-banner #imgban1 .imgban-box {
+    padding-top: 70px;
+    padding-left: 100px;
 }
