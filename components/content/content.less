@@ -2,6 +2,10 @@
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
+
+    @media @mobile {
+        padding: 0 2%;
+    }
 }
 
 .intro, .app-features {
@@ -9,48 +13,180 @@
 }
 
 .intro {
-    padding: 33px 0 17px 120px;
+    padding: 153px 0 65px 120px;
+
+    @media @mobile {
+        padding: 45px 4%;
+    }
 
     h2{
-      padding: 0px 0 14px 7%;
+        font-size: 5rem;
+        font-weight: 600;
+        padding-left: 8%;
+    }
+
+      @media @mobile {
+          padding-left: 2%;
+          font-size: 2.6rem;
+      }
     }
 
     p {
         font-size: 2rem;
-        padding-left: 13%;
+        margin-left: 13%;
+        margin-top: 16px;
+
+        @media @mobile {
+            width: 91%;
+            font-size: 1.7rem;
+            padding-top: 16px;
+        }
     }
-}
 
 .app-features {
     display: flex;
-    padding: 38px 2%;
+    padding: 105px 2%;
     margin-bottom: 12px;
 
-    .feature1,.feature2,.feature3 {
-        padding: 0 2%;
+    @media @mobile {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .feature1 {
+        width: 26.5%;
+        margin-right: 60px;
+        margin-left: 4%;
+
+        @media @mobile {
+            width: 42.5%;
+            margin-left: 31%;
+            padding: 63px 0;
+            border-bottom: 1px solid;
+        }
+
         h3 {
-            padding-left: 13%;
-            padding-bottom: 9px;
-            font-weight: bold;
-          }
-       
+            font-size: 2.5rem;
+            font-weight: 800;
+            width: 96%;
+            padding-bottom: 31px;
+            padding-left: 8%;
+
+            @media @mobile {
+                width: 125%;
+                font-size: 2rem;
+                font-weight: bold;
+                padding-bottom: 20px;
+                padding-left: 0;
+            }
+          
+         }
+
         p {
-         font-size: 1.7rem;
-         line-height: 24px;
-          }
-     }
-}
+            width: 95%;
+            padding-top: 18px;
+
+           @media @mobile {
+            padding-top: 16px;
+            font-size: 1.67rem;
+            font-weight: normal;   
+            margin-left: 0;       
+           }
+        }
+    }
+
+    .feature2 {
+        width: 26.8%;
+        margin-right: 56px;
+
+        @media @mobile {
+            width: 42.5%;
+            margin-left: 31%;
+            padding: 63px 0;
+            border-bottom: 1px solid;
+            margin-right: 0;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            width: 96%;
+            padding-bottom: 31px;
+            padding-left: 16%;
+        }
+
+        p {
+            padding-top: 16px;
+           
+           @media @mobile {
+            padding-top: 16px;
+            font-size: 1.67rem;
+            font-weight: normal;
+            padding-left: 0;
+               }
+           }
+        }
+       
+    }
+
+    .feature3 {
+        width: 26.8%;
+
+        @media @mobile {
+            width: 42.5%;
+            margin-left: 31%;
+            padding: 63px 0;
+            margin-right: 0;
+        }
+         h3 {
+            padding-left: 4%;
+            font-size: 2.5rem;
+            font-weight: 800;
+            width: 103%;
+            padding-bottom: 26px;
+         }
+
+         p {
+           padding-top: 22px;
+           line-height: 24px;
+         }
+    }
+
+    img{
+        border-radius: 16px;
+    }
+
+         @media @mobile {
+            padding-top: 16px;
+            font-size: 1.67rem;
+            font-weight: normal;
+            padding-left: 0;
+               }
 
 .featured-books{
     background: @featuredBooks-background;
 
     h2 {
-      padding: 12px 32%;
+      padding: 12px 34%;
+      font-size: 5rem;
+
+      @media @mobile {
+        padding: 3px 20%;
+        padding-top: 16px;
+        font-size: 4rem;
+      }
     }
 
     p {
-      padding-left: 2%;
-      padding-bottom: 18px;
+      font-size: 2.4rem;
+      padding-bottom: 25px;
+      font-weight: none;
+
+      @media @mobile {
+        font-size: 2rem;
+        width: 95%;
+        margin-left:32px;
+      }
     }
 }
 
@@ -58,10 +194,15 @@
 .main-banner{
     margin: 0 auto;
     width: 1100px;
-    height: 400px;
+    height: 525px;
     background-color: #fff;
     overflow: hidden;
     position: relative;
+    
+    @media @mobile {
+        width:100%;
+   }
+
 }
 
 .main-banner .imgban {
@@ -110,28 +251,14 @@
 
 }
 
-.imgbanbtn-prev {
-    left: 5px;
-    background-image: url(../../Images/keyboard_arrow_left_white_192x192.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.imgbanbtn-next {
-    right: 5px;
-    background-image: url(/Images/keyboard_arrow_right_white_192x192.png);
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
 .main-banner .imgban-box h2 {
     font-family: @main-font;
     font-size: 60PX;
     color: #fff;
+
+    @media @mobile {
+        font-size: 38PX;
+    }
 }
 
 .main-banner .imgban-box p {

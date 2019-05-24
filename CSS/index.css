@@ -133,31 +133,14 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-body {
-  background: #F1D9CF;
-}
 h1,
 h2,
-h3 {
-  font-family: 'Montserrat', sans-serif;
-}
-h1 {
-  padding-bottom: 8px;
-  font-size: 10rem;
-  color: white;
-  font-weight: bolder;
-}
-h2 {
-  font-size: 4.6rem;
-  font-weight: bold;
-}
-h3 {
-  font-size: 2rem;
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
 }
 p {
-  font-size: 1.4rem;
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
 }
 img {
   width: 100%;
@@ -173,19 +156,71 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .header {
+    padding-bottom: 79px;
+    width: 100%;
+    display: block;
+  }
+}
+.header .nav-buttons {
+  width: 26%;
+}
+@media (max-width: 500px) {
+  .header .nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 29px;
+    width: 99%;
+  }
+}
+.header .nav-buttons a {
+  font-size: 2.3rem;
+}
+@media (max-width: 500px) {
+  .header .nav-buttons a {
+    font-size: 2.2rem;
+  }
+}
 .header .app-name {
   display: flex;
-  margin: 242px 0 0 224px;
+  margin-top: 241px;
   flex-direction: column;
   align-items: center;
+  width: 54%;
+}
+@media (max-width: 500px) {
+  .header .app-name {
+    display: block;
+    margin-top: 81px;
+    margin-left: 17%;
+    width: 64%;
+  }
+}
+.header .app-name .main-logo {
+  width: 45%;
+}
+@media (max-width: 500px) {
+  .header .app-name .main-logo {
+    margin: 0 0 32px 24%;
+    width: 54%;
+  }
 }
 .header .app-name p {
   font-size: 2.4rem;
   padding-bottom: 21px;
   color: white;
+  padding-left: none;
+  width: 102%;
+  padding-top: 37px;
+}
+@media (max-width: 500px) {
+  .header .app-name p {
+    display: none;
+  }
 }
 .header .app-name button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 33px;
   width: 182px;
   border-radius: 7px;
@@ -195,15 +230,35 @@ img {
   cursor: pointer;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .header .app-name button {
+    height: 44px;
+    width: 229px;
+  }
+}
 .header .app-name button:hover {
   background: black;
   color: white;
 }
+@media (max-width: 500px) {
+  .header .app-name button {
+    margin-left: 15%;
+    height: 34px;
+  }
+}
 .header .ui-buttons {
   margin: 24px;
 }
+@media (max-width: 500px) {
+  .header .ui-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17%;
+    margin-top: 51px;
+  }
+}
 .header .ui-buttons button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-right: 15px;
   height: 38px;
   width: 106px;
@@ -215,6 +270,13 @@ img {
   cursor: pointer;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .header .ui-buttons button {
+    height: 50px;
+    width: 332px;
+    margin-bottom: 12px;
+  }
+}
 .header .ui-buttons button:hover {
   background: white;
   color: black;
@@ -224,60 +286,198 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .main-page {
+    padding: 0 2%;
+  }
+}
 .intro,
 .app-features {
-  background: #EACFB2;
+  background: #F5F5F5;
 }
 .intro {
-  padding: 33px 0 17px 120px;
+  padding: 153px 0 65px 120px;
+}
+@media (max-width: 500px) {
+  .intro {
+    padding: 45px 4%;
+  }
 }
 .intro h2 {
-  padding: 0px 0 14px 7%;
+  font-size: 5rem;
+  font-weight: 600;
+  padding-left: 8%;
 }
-.intro p {
+@media (max-width: 500px) {
+  .intro {
+    padding-left: 2%;
+    font-size: 2.6rem;
+  }
+}
+p {
   font-size: 2rem;
-  padding-left: 13%;
+  margin-left: 13%;
+  margin-top: 16px;
+}
+@media (max-width: 500px) {
+  p {
+    width: 91%;
+    font-size: 1.7rem;
+    padding-top: 16px;
+  }
 }
 .app-features {
   display: flex;
-  padding: 38px 2%;
+  padding: 105px 2%;
   margin-bottom: 12px;
 }
-.app-features .feature1,
-.app-features .feature2,
-.app-features .feature3 {
-  padding: 0 2%;
+@media (max-width: 500px) {
+  .app-features {
+    flex-direction: column;
+    padding: 0;
+  }
 }
-.app-features .feature1 h3,
-.app-features .feature2 h3,
-.app-features .feature3 h3 {
-  padding-left: 13%;
-  padding-bottom: 9px;
-  font-weight: bold;
+.app-features .feature1 {
+  width: 26.5%;
+  margin-right: 60px;
+  margin-left: 4%;
 }
-.app-features .feature1 p,
-.app-features .feature2 p,
-.app-features .feature3 p {
-  font-size: 1.7rem;
+@media (max-width: 500px) {
+  .app-features .feature1 {
+    width: 42.5%;
+    margin-left: 31%;
+    padding: 63px 0;
+    border-bottom: 1px solid;
+  }
+}
+.app-features .feature1 h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 96%;
+  padding-bottom: 31px;
+  padding-left: 8%;
+}
+@media (max-width: 500px) {
+  .app-features .feature1 h3 {
+    width: 125%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-left: 0;
+  }
+}
+.app-features .feature1 p {
+  width: 95%;
+  padding-top: 18px;
+}
+@media (max-width: 500px) {
+  .app-features .feature1 p {
+    padding-top: 16px;
+    font-size: 1.67rem;
+    font-weight: normal;
+    margin-left: 0;
+  }
+}
+.app-features .feature2 {
+  width: 26.8%;
+  margin-right: 56px;
+}
+@media (max-width: 500px) {
+  .app-features .feature2 {
+    width: 42.5%;
+    margin-left: 31%;
+    padding: 63px 0;
+    border-bottom: 1px solid;
+    margin-right: 0;
+  }
+}
+.app-features .feature2 h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 96%;
+  padding-bottom: 31px;
+  padding-left: 16%;
+}
+.app-features .feature2 p {
+  padding-top: 16px;
+}
+@media (max-width: 500px) {
+  .app-features .feature2 p {
+    padding-top: 16px;
+    font-size: 1.67rem;
+    font-weight: normal;
+    padding-left: 0;
+  }
+}
+.feature3 {
+  width: 26.8%;
+}
+@media (max-width: 500px) {
+  .feature3 {
+    width: 42.5%;
+    margin-left: 31%;
+    padding: 63px 0;
+    margin-right: 0;
+  }
+}
+.feature3 h3 {
+  padding-left: 4%;
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 103%;
+  padding-bottom: 26px;
+}
+.feature3 p {
+  padding-top: 22px;
   line-height: 24px;
 }
+img {
+  border-radius: 16px;
+}
+@media (max-width: 500px) {
+  padding-top: 16px;
+  font-size: 1.67rem;
+  font-weight: normal;
+  padding-left: 0;
+}
 .featured-books {
-  background: #E4C3A5;
+  background: lightgray;
 }
 .featured-books h2 {
-  padding: 12px 32%;
+  padding: 12px 34%;
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .featured-books h2 {
+    padding: 3px 20%;
+    padding-top: 16px;
+    font-size: 4rem;
+  }
 }
 .featured-books p {
-  padding-left: 2%;
-  padding-bottom: 18px;
+  font-size: 2.4rem;
+  padding-bottom: 25px;
+  font-weight: none;
+}
+@media (max-width: 500px) {
+  .featured-books p {
+    font-size: 2rem;
+    width: 95%;
+    margin-left: 32px;
+  }
 }
 .main-banner {
   margin: 0 auto;
   width: 1100px;
-  height: 400px;
+  height: 525px;
   background-color: #fff;
   overflow: hidden;
   position: relative;
+}
+@media (max-width: 500px) {
+  .main-banner {
+    width: 100%;
+  }
 }
 .main-banner .imgban {
   width: 100%;
@@ -318,24 +518,15 @@ img {
 .imgbanbtn:hover {
   opacity: 0.9;
 }
-.imgbanbtn-prev {
-  left: 5px;
-  background-image: url(../../Images/keyboard_arrow_left_white_192x192.png);
-  background-size: 60%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.imgbanbtn-next {
-  right: 5px;
-  background-image: url(/Images/keyboard_arrow_right_white_192x192.png);
-  background-size: 60%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .main-banner .imgban-box h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 60PX;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .main-banner .imgban-box h2 {
+    font-size: 38PX;
+  }
 }
 .main-banner .imgban-box p {
   padding-top: 6px;
@@ -360,9 +551,411 @@ img {
 .footer {
   width: 100%;
   height: 67px;
+  background: #078C54;
+  margin-top: 20px;
 }
 .footer .nav-buttons {
   display: flex;
   justify-content: space-evenly;
   padding-top: 29px;
+}
+.footer .nav-buttons a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.footer .nav-buttons a {
+  color: black;
+}
+body {
+  background: none;
+}
+.header .logo {
+  width: 9%;
+  margin: 6px 0 0 10px;
+}
+@media (max-width: 500px) {
+  .header .logo {
+    width: 17%;
+    margin: 0;
+    padding-top: 2%;
+    padding-left: 2%;
+  }
+}
+.header .nav-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 29px;
+  padding-top: 14px;
+}
+.header .nav-buttons a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.main-page {
+  background: #F4F4F4;
+}
+.main-header {
+  padding: 51px 24%;
+  width: 98%;
+  font-size: 5rem;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 500px) {
+  .main-header {
+    font-size: 4rem;
+    padding: 46px 5%;
+    width: 101%;
+  }
+}
+.members {
+  display: flex;
+  margin-left: 2%;
+}
+@media (max-width: 500px) {
+  .members {
+    flex-direction: column;
+  }
+}
+.ui,
+.front,
+.back,
+.ios,
+.lead {
+  margin-right: 2%;
+}
+.ui h3,
+.front h3,
+.back h3,
+.ios h3,
+.lead h3 {
+  font-size: 3rem;
+  margin-left: 19%;
+  margin-bottom: 23px;
+}
+@media (max-width: 500px) {
+  .ui h3,
+  .front h3,
+  .back h3,
+  .ios h3,
+  .lead h3 {
+    margin-left: 44%;
+  }
+}
+.ui .samantha,
+.front .samantha,
+.back .samantha,
+.ios .samantha,
+.lead .samantha,
+.ui .jacob,
+.front .jacob,
+.back .jacob,
+.ios .jacob,
+.lead .jacob,
+.ui .isaias,
+.front .isaias,
+.back .isaias,
+.ios .isaias,
+.lead .isaias,
+.ui .ming,
+.front .ming,
+.back .ming,
+.ios .ming,
+.lead .ming,
+.ui .arron,
+.front .arron,
+.back .arron,
+.ios .arron,
+.lead .arron,
+.ui .hector,
+.front .hector,
+.back .hector,
+.ios .hector,
+.lead .hector,
+.ui .kelli,
+.front .kelli,
+.back .kelli,
+.ios .kelli,
+.lead .kelli,
+.ui .henry,
+.front .henry,
+.back .henry,
+.ios .henry,
+.lead .henry {
+  margin-bottom: 32px;
+}
+.ui .samantha h4,
+.front .samantha h4,
+.back .samantha h4,
+.ios .samantha h4,
+.lead .samantha h4,
+.ui .jacob h4,
+.front .jacob h4,
+.back .jacob h4,
+.ios .jacob h4,
+.lead .jacob h4,
+.ui .isaias h4,
+.front .isaias h4,
+.back .isaias h4,
+.ios .isaias h4,
+.lead .isaias h4,
+.ui .ming h4,
+.front .ming h4,
+.back .ming h4,
+.ios .ming h4,
+.lead .ming h4,
+.ui .arron h4,
+.front .arron h4,
+.back .arron h4,
+.ios .arron h4,
+.lead .arron h4,
+.ui .hector h4,
+.front .hector h4,
+.back .hector h4,
+.ios .hector h4,
+.lead .hector h4,
+.ui .kelli h4,
+.front .kelli h4,
+.back .kelli h4,
+.ios .kelli h4,
+.lead .kelli h4,
+.ui .henry h4,
+.front .henry h4,
+.back .henry h4,
+.ios .henry h4,
+.lead .henry h4 {
+  font-size: 2.3em;
+  padding-top: 14px;
+}
+@media (max-width: 500px) {
+  .ui .samantha h4,
+  .front .samantha h4,
+  .back .samantha h4,
+  .ios .samantha h4,
+  .lead .samantha h4,
+  .ui .jacob h4,
+  .front .jacob h4,
+  .back .jacob h4,
+  .ios .jacob h4,
+  .lead .jacob h4,
+  .ui .isaias h4,
+  .front .isaias h4,
+  .back .isaias h4,
+  .ios .isaias h4,
+  .lead .isaias h4,
+  .ui .ming h4,
+  .front .ming h4,
+  .back .ming h4,
+  .ios .ming h4,
+  .lead .ming h4,
+  .ui .arron h4,
+  .front .arron h4,
+  .back .arron h4,
+  .ios .arron h4,
+  .lead .arron h4,
+  .ui .hector h4,
+  .front .hector h4,
+  .back .hector h4,
+  .ios .hector h4,
+  .lead .hector h4,
+  .ui .kelli h4,
+  .front .kelli h4,
+  .back .kelli h4,
+  .ios .kelli h4,
+  .lead .kelli h4,
+  .ui .henry h4,
+  .front .henry h4,
+  .back .henry h4,
+  .ios .henry h4,
+  .lead .henry h4 {
+    margin-left: 31%;
+  }
+}
+.ui .samantha p,
+.front .samantha p,
+.back .samantha p,
+.ios .samantha p,
+.lead .samantha p,
+.ui .jacob p,
+.front .jacob p,
+.back .jacob p,
+.ios .jacob p,
+.lead .jacob p,
+.ui .isaias p,
+.front .isaias p,
+.back .isaias p,
+.ios .isaias p,
+.lead .isaias p,
+.ui .ming p,
+.front .ming p,
+.back .ming p,
+.ios .ming p,
+.lead .ming p,
+.ui .arron p,
+.front .arron p,
+.back .arron p,
+.ios .arron p,
+.lead .arron p,
+.ui .hector p,
+.front .hector p,
+.back .hector p,
+.ios .hector p,
+.lead .hector p,
+.ui .kelli p,
+.front .kelli p,
+.back .kelli p,
+.ios .kelli p,
+.lead .kelli p,
+.ui .henry p,
+.front .henry p,
+.back .henry p,
+.ios .henry p,
+.lead .henry p {
+  font-size: 1.6rem;
+  line-height: 22px;
+  font-weight: normal;
+  margin: 8px 0;
+}
+@media (max-width: 500px) {
+  .ui .samantha p,
+  .front .samantha p,
+  .back .samantha p,
+  .ios .samantha p,
+  .lead .samantha p,
+  .ui .jacob p,
+  .front .jacob p,
+  .back .jacob p,
+  .ios .jacob p,
+  .lead .jacob p,
+  .ui .isaias p,
+  .front .isaias p,
+  .back .isaias p,
+  .ios .isaias p,
+  .lead .isaias p,
+  .ui .ming p,
+  .front .ming p,
+  .back .ming p,
+  .ios .ming p,
+  .lead .ming p,
+  .ui .arron p,
+  .front .arron p,
+  .back .arron p,
+  .ios .arron p,
+  .lead .arron p,
+  .ui .hector p,
+  .front .hector p,
+  .back .hector p,
+  .ios .hector p,
+  .lead .hector p,
+  .ui .kelli p,
+  .front .kelli p,
+  .back .kelli p,
+  .ios .kelli p,
+  .lead .kelli p,
+  .ui .henry p,
+  .front .henry p,
+  .back .henry p,
+  .ios .henry p,
+  .lead .henry p {
+    margin-left: 7%;
+  }
+}
+.ui .samantha button,
+.front .samantha button,
+.back .samantha button,
+.ios .samantha button,
+.lead .samantha button,
+.ui .jacob button,
+.front .jacob button,
+.back .jacob button,
+.ios .jacob button,
+.lead .jacob button,
+.ui .isaias button,
+.front .isaias button,
+.back .isaias button,
+.ios .isaias button,
+.lead .isaias button,
+.ui .ming button,
+.front .ming button,
+.back .ming button,
+.ios .ming button,
+.lead .ming button,
+.ui .arron button,
+.front .arron button,
+.back .arron button,
+.ios .arron button,
+.lead .arron button,
+.ui .hector button,
+.front .hector button,
+.back .hector button,
+.ios .hector button,
+.lead .hector button,
+.ui .kelli button,
+.front .kelli button,
+.back .kelli button,
+.ios .kelli button,
+.lead .kelli button,
+.ui .henry button,
+.front .henry button,
+.back .henry button,
+.ios .henry button,
+.lead .henry button {
+  border-radius: 6px;
+  font-size: 1.4rem;
+  color: white;
+  background: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  height: 32px;
+  width: 152px;
+}
+@media (max-width: 500px) {
+  .ui .samantha button,
+  .front .samantha button,
+  .back .samantha button,
+  .ios .samantha button,
+  .lead .samantha button,
+  .ui .jacob button,
+  .front .jacob button,
+  .back .jacob button,
+  .ios .jacob button,
+  .lead .jacob button,
+  .ui .isaias button,
+  .front .isaias button,
+  .back .isaias button,
+  .ios .isaias button,
+  .lead .isaias button,
+  .ui .ming button,
+  .front .ming button,
+  .back .ming button,
+  .ios .ming button,
+  .lead .ming button,
+  .ui .arron button,
+  .front .arron button,
+  .back .arron button,
+  .ios .arron button,
+  .lead .arron button,
+  .ui .hector button,
+  .front .hector button,
+  .back .hector button,
+  .ios .hector button,
+  .lead .hector button,
+  .ui .kelli button,
+  .front .kelli button,
+  .back .kelli button,
+  .ios .kelli button,
+  .lead .kelli button,
+  .ui .henry button,
+  .front .henry button,
+  .back .henry button,
+  .ios .henry button,
+  .lead .henry button {
+    margin-left: 33%;
+  }
 }

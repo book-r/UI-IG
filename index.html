@@ -3,50 +3,64 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Images/favicon.ico">
   <title>Bookr</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
   
   <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-      <div id="mysidenav" class="sidenav">
-      
-    </div>
+ <header class="header">
+      <nav class="nav-buttons">
+          <a href="#">Home</a> 
+          <a href="about-us.html">About Us</a>
+          <a href="#">Contact</a>   
+          </nav>
       <div class="app-name">
-        <h1>Bookr</h1>
+        <div class="main-logo">
+          <img src="Images/bookr_logo1.png">
+        </div>
         <p>A modern App that allows you to find reviews for specific texbooks.</p>   
         <button>Learn More</button>
       </div>
       <div class="ui-buttons">
-        <button>Log In</button>
-        <button>Sign Up</button>
-      </div>
-    </header>
+        <a href="https://bookr-ming.netlify.com/login">
+          <button class="log-in">Login</button>
+        </a> 
+        <a href="https://bookr-ming.netlify.com/signup">
+          <button>Sign Up</button>
+        </a> 
+        </div>
+      </header>
     <section class="main-page">
       <div class="top-content">
          <div class="intro">
             <h2>Bookr is more than just an App!</h2> 
-            <p>Our App provides a social platform for peer reviewd textbooks </p>     
+            <p>Our App provides a social platform for peer reviewed textbooks </p>     
          </div>
          <div class="app-features">
            <div class="feature1"> 
              <h3>User friendly Interface</h3>
-             <img src="Images/charles-1137347-unsplash.jpg">
+             <div class="app-img1">
+               <img src="Images/interface2.png">
+             </div>
              <p>Our clean design allows you to find a specific textbook without too much trouble.</p>
             </div>
               <div class="feature2">
                 <h3>Review Textbooks</h3>
-                <img src="Images/charles-1137347-unsplash.jpg">
-                <p> </p>    
+                <div class="app-img2">
+                  <img src="Images/review2.png">
+                </div>
+                <p>Our App includes a large collection of textbooks.</p>    
               </div>
               <div class="feature3">
                 <h3>Create your own Account</h3>
-                <img src="Images/charles-1137347-unsplash.jpg">
-                <p>consectetur adipiscing elit, sed do eiusmod tempor 
-                   incididunt ut labore et dolore magna aliqua. Ut enim 
-                   ad minim veniam, quis nostrud exercitation ullamco </p>    
+                <div class="app-img3">
+                  <img src="Images/account2.png">
+                </div>
+                <p>Create and personalize your account.</p>    
               </div>
           </div>
       </div>
@@ -54,13 +68,10 @@
         <div class="featured-books">
           <div class="books-intro">
             <h2>Featured Books</h2>
-            <p>consectetur adipiscing elit, sed do eiusmod tempor 
-               incididunt ut labore et dolore magna aliqua. Ut enim 
-               ad minim veniam, quis nostrud exercitation ullamco </p>    
+            <p>Browse through a great collection of textbooks for any particular field of study!</p>    
           </div>   
         </div>
         <div class="main-banner" id="main-banner">
-          <div class="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev"></div>
           <div class="imgban" id="imgban3">
             <div class="imgban-box">
               <h2>Book Tittle</h2>
@@ -79,15 +90,15 @@
               <p>Book Information.</p>
             </div>
           </div>
-          <div class="imgbanbtn imgbanbtn-next" id="imgbanbtn-next"></div>
         </div>
     </section>
     <footer class="footer">   
       <nav class="nav-buttons">
         <a href="#">Home</a> 
-        <a href="#">About Us</a>
+        <a href="about-us.html">About Us</a>
         <a href="#">Contact</a>   
       </nav>
+    </footer>
 
 <script>
     var bannerStatus = 1;
@@ -112,23 +123,7 @@
     
     }
 
-document.getElementById("imgbanbtn-prev").onclick = function() {
-   if (bannerStatus === 1) {
-     bannerStatus = 2;
-   }
-   else if (bannerStatus === 2) {
-     bannerStatus = 3;
-   }
-   else if (bannerStatus === 3) {
-     bannerStatus = 1;
-   }
-   bannerLoop();
-}
 
-
-document.getElementById("imgbanbtn-next").onclick = function() {
-  bannerLoop();
-}
 
     function bannerLoop() {
       if (bannerStatus === 1) {
@@ -182,5 +177,5 @@ document.getElementById("imgbanbtn-next").onclick = function() {
     }
 </script> 
 
-    </footer>
+    
 </body>
