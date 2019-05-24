@@ -13,6 +13,12 @@
     cursor: pointer; 
     font-weight: bold;
 
+    @media @mobile {
+        height: 50px;
+        width: 332px;
+        margin-bottom: 12px;
+        }
+
     &:hover {
         background: white;
         color: black;
@@ -30,8 +36,44 @@
     cursor: pointer; 
     font-weight: bold;
 
+    @media @mobile {
+        height: 44px;
+        width: 229px;
+    }
+
     &:hover {
         background:black;
         color:white;
     }
+}
+
+
+//Navigation
+
+.navigation() {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 29px;
+      
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: @header-font;   
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+}
+
+//About Us button
+
+.learn-more() {
+        border-radius: 6px;
+        font-size: 1.4rem;
+        color: white;
+        background: black;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        height: 32px;
+        width: 152px;
 }

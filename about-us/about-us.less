@@ -1,0 +1,97 @@
+
+body {
+    background:none;
+}
+
+.header {
+
+    .logo {
+       width: 9%;
+       margin: 6px 0 0 10px;
+
+       @media @mobile {
+        width: 17%;
+        margin:0;
+        padding-top: 2%;
+        padding-left: 2%;
+
+       }
+    }
+    .nav-buttons {
+        .navigation();
+        padding-top: 14px;
+   }
+}
+
+.main-page {
+  background:#F4F4F4;
+}
+
+.main-header {
+    padding: 51px 24%;
+    width: 98%;
+    font-size: 5rem;
+    font-family: @header-font;
+
+    @media @mobile {
+      font-size: 4rem;
+      padding: 46px 5%;
+      width: 101%;
+    }
+}
+
+.members {
+    display: flex;
+    margin-left: 2%;
+
+    @media @mobile {
+      flex-direction: column;
+    }
+}
+
+.ui,.front,.back,.ios,.lead {
+    margin-right: 2%;
+
+    h3 {
+      font-size: 3rem;
+      margin-left: 19%;
+      margin-bottom: 23px;
+
+      @media @mobile {
+        margin-left: 34%;
+      }
+    }
+
+    .samantha, .jacob, .isaias, .ming, .arron, .hector, .kelli, .henry {
+        margin-bottom: 32px;
+
+        h4 {
+          font-size: 2.3em;
+          padding-top:14px;
+
+          @media @mobile {
+            margin-left: 31%;
+             }
+          }
+        
+        p {
+          font-size: 1.6rem;
+          line-height: 22px;
+          font-weight: normal;
+          margin: 8px 0;
+
+          @media @mobile {
+            margin-left: 7%;
+          }
+            }
+
+        button {
+          .learn-more();  
+
+          @media @mobile {
+            margin-left: 33%;
+          }
+        }
+        
+    }
+}
