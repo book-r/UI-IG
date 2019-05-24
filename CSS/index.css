@@ -1,0 +1,368 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background: #F1D9CF;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  padding-bottom: 8px;
+  font-size: 10rem;
+  color: white;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 4.6rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.header {
+  background-image: url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2282&q=80');
+  height: 100%;
+  padding-bottom: 209px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.header .app-name {
+  display: flex;
+  margin: 242px 0 0 224px;
+  flex-direction: column;
+  align-items: center;
+}
+.header .app-name p {
+  font-size: 2.4rem;
+  padding-bottom: 21px;
+  color: white;
+}
+.header .app-name button {
+  font-family: 'Montserrat', sans-serif;
+  height: 33px;
+  width: 182px;
+  border-radius: 7px;
+  border: none;
+  font-size: 1.5rem;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header .app-name button:hover {
+  background: black;
+  color: white;
+}
+.header .ui-buttons {
+  margin: 24px;
+}
+.header .ui-buttons button {
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 15px;
+  height: 38px;
+  width: 106px;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  color: white;
+  background: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.header .ui-buttons button:hover {
+  background: white;
+  color: black;
+}
+.main-page {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.intro,
+.app-features {
+  background: #EACFB2;
+}
+.intro {
+  padding: 33px 0 17px 120px;
+}
+.intro h2 {
+  padding: 0px 0 14px 7%;
+}
+.intro p {
+  font-size: 2rem;
+  padding-left: 13%;
+}
+.app-features {
+  display: flex;
+  padding: 38px 2%;
+  margin-bottom: 12px;
+}
+.app-features .feature1,
+.app-features .feature2,
+.app-features .feature3 {
+  padding: 0 2%;
+}
+.app-features .feature1 h3,
+.app-features .feature2 h3,
+.app-features .feature3 h3 {
+  padding-left: 13%;
+  padding-bottom: 9px;
+  font-weight: bold;
+}
+.app-features .feature1 p,
+.app-features .feature2 p,
+.app-features .feature3 p {
+  font-size: 1.7rem;
+  line-height: 24px;
+}
+.featured-books {
+  background: #E4C3A5;
+}
+.featured-books h2 {
+  padding: 12px 32%;
+}
+.featured-books p {
+  padding-left: 2%;
+  padding-bottom: 18px;
+}
+.main-banner {
+  margin: 0 auto;
+  width: 1100px;
+  height: 400px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.main-banner .imgban {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  transition: all ease-in-out 500ms;
+}
+.main-banner #imgban3 {
+  background-image: url(https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1548&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-banner #imgban2 {
+  background-image: url(https://images.unsplash.com/photo-1553077640-1563c06a7ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1498&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-banner #imgban1 {
+  background-image: url(https://images.unsplash.com/photo-1517221514-0fc402968cb1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.imgbanbtn {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  top: 180px;
+  z-index: 2000;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.imgbanbtn:hover {
+  opacity: 0.9;
+}
+.imgbanbtn-prev {
+  left: 5px;
+  background-image: url(../../Images/keyboard_arrow_left_white_192x192.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.imgbanbtn-next {
+  right: 5px;
+  background-image: url(/Images/keyboard_arrow_right_white_192x192.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-banner .imgban-box h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60PX;
+  color: #fff;
+}
+.main-banner .imgban-box p {
+  padding-top: 6px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.main-banner #imgban3 .imgban-box {
+  padding-top: 220px;
+  padding-left: 100px;
+}
+.main-banner #imgban2 .imgban-box {
+  padding-top: 220px;
+  padding-right: 100px;
+  float: right;
+  text-align: right;
+}
+.main-banner #imgban1 .imgban-box {
+  padding-top: 70px;
+  padding-left: 100px;
+}
+.footer {
+  width: 100%;
+  height: 67px;
+}
+.footer .nav-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 29px;
+}
